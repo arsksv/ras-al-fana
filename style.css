@@ -120,7 +120,7 @@ nav a.active::after {
 }
 
 /* HERO */
-.hero {
+/* .hero {
   background: linear-gradient(135deg, #290060, #4a00a8);
   color: white;
   text-align: center;
@@ -147,7 +147,85 @@ nav a.active::after {
 
 .btn:hover {
   background: #d6c2ff;
+} */
+
+
+/* HERO */
+.hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 140px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(73, 0, 168, 0.43); /* #4900a86e */
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 2;
+  background: rgba(73, 0, 168, 0.43); /* translucent background for text box */
+  padding: 50px 8%;
+  border-radius: 16px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  background: white;
+  color: var(--primary);
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #d6c2ff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-overlay {
+    padding: 40px 20px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
 
 /* SECTIONS */
 section {
@@ -168,7 +246,7 @@ section {
   gap: 12px;
   font-size: 1.04em;
   font-weight: 500;
-  border-left: 4px solid #4a00a8;
+  border-left: 4px solid #4900a8;
 }
 
 .card-icon {
@@ -380,5 +458,4 @@ footer {
 
 @media (max-width: 900px) {
   .cards { flex-direction: column; gap: 16px; }
-
 }
