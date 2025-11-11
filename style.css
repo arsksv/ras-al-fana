@@ -155,23 +155,6 @@ section {
   text-align: center;
 }
 
-/* .cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-} */
-
-/* .card {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  padding: 20px;
-  flex: 1 1 200px;
-  transition: transform 0.3s;
-} */
-
-
 
 .card {
   position: relative;
@@ -302,6 +285,86 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Modern contact section */
+.contact-modern {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 50px 8%;
+  text-align: center;
+}
+
+.contact-modern h2 {
+  color: var(--primary);
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.contact-card {
+  display: flex;
+  align-items: flex-start;
+  background: var(--light);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  gap: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: left;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.contact-card .material-icons {
+  color: var(--primary);
+  font-size: 30px;
+}
+
+.contact-card h3 {
+  margin: 0 0 5px;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.contact-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.contact-card a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustment */
+@media (max-width: 600px) {
+  .contact-card {
+    padding: 18px;
+  }
+
+  .contact-modern h2 {
+    font-size: 1.6rem;
+  }
+}
+
 
 @keyframes fadeIn {
   from {opacity: 0;}
