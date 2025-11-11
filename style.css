@@ -255,7 +255,7 @@ footer {
   border-radius: 8px;
   display: block;
   margin: 0 auto 8px auto;
-  max-width: 90px;
+  max-width: 140px;
   height: auto;
 }
 .logo img {
@@ -380,4 +380,5 @@ footer {
 
 @media (max-width: 900px) {
   .cards { flex-direction: column; gap: 16px; }
+
 }
