@@ -172,17 +172,17 @@ nav a.active::after {
   z-index: 1;
 }
 
-.hero-overlay {
+/* .hero-overlay {
   position: relative;
   z-index: 2;
-  background: rgba(73, 0, 168, 0.43); /* translucent background for text box */
+  background: rgba(73, 0, 168, 0.43); 
   padding: 50px 8%;
   border-radius: 16px;
   backdrop-filter: blur(4px);
   box-shadow: 0 8px 24px rgba(0,0,0,0.25);
   max-width: 750px;
   margin: 0 auto;
-}
+} */
 
 .hero h1 {
   font-size: 2.6rem;
@@ -213,9 +213,9 @@ nav a.active::after {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .hero-overlay {
+  /* .hero-overlay {
     padding: 40px 20px;
-  }
+  } */
 
   .hero h1 {
     font-size: 1.8rem;
@@ -333,7 +333,7 @@ footer {
   border-radius: 8px;
   display: block;
   margin: 0 auto 8px auto;
-  max-width: 140px;
+  max-width: 1400px;
   height: auto;
 }
 .logo img {
