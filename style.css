@@ -155,20 +155,50 @@ section {
   text-align: center;
 }
 
-.cards {
+/* .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-}
+} */
 
-.card {
+/* .card {
   background: white;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
   padding: 20px;
   flex: 1 1 200px;
   transition: transform 0.3s;
+} */
+
+
+
+.card {
+  position: relative;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+  padding: 24px 18px 18px 18px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.04em;
+  font-weight: 500;
+  border-left: 4px solid #4a00a8;
+}
+
+.card-icon {
+  color: #4a00a8;
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .card:hover {
@@ -237,6 +267,19 @@ footer {
   margin-top: 60px;
 }
 
+
+.service-card img {
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto 8px auto;
+  max-width: 90px;
+  height: auto;
+}
+.logo img {
+  margin-right: 7px;
+}
+
+
 /* ANIMATIONS */
 .fade-in {
   opacity: 0;
@@ -270,4 +313,8 @@ footer {
   .hero h1 {
     font-size: 1.5rem;
   }
+}
+
+@media (max-width: 900px) {
+  .cards { flex-direction: column; gap: 16px; }
 }
